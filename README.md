@@ -22,7 +22,7 @@ npm install
 npm run dev
 ```
 
-3. Open http://localhost:3000
+3. Open http://localhost:8080
 
 ## Docker
 
@@ -35,10 +35,10 @@ docker build -t aws-tf-baseline-frontend .
 
 2. Run the container:
 ```bash
-docker run -p 3000:3000 aws-tf-baseline-frontend
+docker run -p 8080:8080 aws-tf-baseline-frontend
 ```
 
-3. Open http://localhost:3000
+3. Open http://localhost:8080
 
 Alternatively, use Docker Compose if available:
 ```bash
