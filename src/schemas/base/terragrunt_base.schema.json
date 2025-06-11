@@ -1,0 +1,21 @@
+{
+  "file": "terragrunt_base.hcl",
+  "description": "Base Terragrunt configuration for all environments",
+  "variables": {
+    "tg_local": {
+      "type": "boolean",
+      "description": "If true, use local backend",
+      "required": true
+    },
+    "terraform_version_constraint": {
+      "type": "string",
+      "description": "Terraform version constraint",
+      "required": true
+    },
+    "terragrunt_version_constraint": {
+      "type": "string",
+      "description": "Terragrunt version constraint",
+      "required": true
+    }
+  }
+}

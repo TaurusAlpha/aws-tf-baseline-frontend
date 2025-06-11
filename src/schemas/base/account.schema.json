@@ -1,0 +1,31 @@
+{
+  "file": "account.hcl",
+  "description": "Account-specific configuration for AWS authentication and metadata",
+  "variables": {
+    "account_name": {
+      "type": "string",
+      "description": "Name label for the AWS account (e.g., dev, staging, prod)",
+      "required": true
+    },
+    "account_id": {
+      "type": "string",
+      "description": "12-digit AWS Account ID",
+      "required": true
+    },
+    "profile_name": {
+      "type": "string",
+      "description": "AWS CLI profile name for this account",
+      "required": true
+    },
+    "assume_role_arn": {
+      "type": "string",
+      "description": "IAM role ARN to assume when accessing this account",
+      "optional": true
+    },
+    "external_id": {
+      "type": "string",
+      "description": "External ID used when assuming a cross-account role",
+      "optional": true
+    }
+  }
+}

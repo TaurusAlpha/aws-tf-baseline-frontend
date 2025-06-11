@@ -1,0 +1,26 @@
+{
+  "file": "global.hcl",
+  "description": "Top-level configuration shared across all accounts",
+  "variables": {
+    "org_name": {
+      "type": "string",
+      "description": "Organization name used for naming conventions and tagging",
+      "required": true
+    },
+    "management_account_id": {
+      "type": "string",
+      "description": "AWS account ID of the management/root account",
+      "required": true
+    },
+    "management_profile_name": {
+      "type": "string",
+      "description": "AWS profile name for the management account",
+      "required": false
+    },
+    "default_region": {
+      "type": "string",
+      "description": "Default AWS region for organization-wide services",
+      "default": "eu-west-1"
+    }
+  }
+}

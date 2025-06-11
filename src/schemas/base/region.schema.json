@@ -1,0 +1,21 @@
+{
+  "file": "region.hcl",
+  "description": "Region-specific configuration within an AWS account",
+  "variables": {
+    "env": {
+      "type": "string",
+      "description": "Environment name (e.g., dev, staging, prod)",
+      "required": true
+    },
+    "env_type": {
+      "type": "string",
+      "description": "Type of environment (e.g., nonprod, prod)",
+      "required": true
+    },
+    "aws_region": {
+      "type": "string",
+      "description": "AWS region (e.g., eu-west-1)",
+      "required": true
+    }
+  }
+}
