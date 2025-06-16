@@ -8,6 +8,17 @@
   </head>
   <body>
     <div id="root"></div>
+    <!-- React Fast Refresh preamble (add this before your main script) -->
+    <script type="module">
+      import RefreshRuntime from 'http://localhost:8080/@react-refresh'
+      RefreshRuntime.injectIntoGlobalHook(window)
+      window.$RefreshReg$ = () => {}
+      window.$RefreshSig$ = () => (type) => type
+      window.__vite_plugin_react_preamble_installed__ = true
+    </script>
+    <!-- Vite client (required for HMR) -->
+    <script type="module" src="http://localhost:8080/@vite/client"></script>
+    <!-- Your entry point -->
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
